@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+    <script src="js/calculadora.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="home">Home</a>
+            <ul class="nav-list">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="centro">
+        <h2>Calculadora</h2>
+    <div>
+        <input type="number" name="n1" id="n1" class="n1" placeholder="Digite um número qualquer" class="inputs">
+    </div>
+    <div>
+    <input type="number" name="n2" id="n2" class="n2" placeholder="Digite um número qualquer" class="inputs">
+</div> 
+<div>
+    <button onclick="valorDasEquacoes()">Clique para realizar os cálculos</button>
+</div>
+<div class="resposta">
+    <h4>Adição: <p id="soma"></p></h4>
+    <h4>Subtração: <p id="menos"></p></h4>
+    <h4>Multiplicação: <p id="two"></p></h4>
+    <h4>Divisão: <p id="twoHundred"></p></h4>
+</div>
+</div>
+</body>
+</html>

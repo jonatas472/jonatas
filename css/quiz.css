@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: Andale Mono, monospace;
+    color: azure;
+}
+body{
+    background-color: rgb(34, 69, 69); 
+}
+.header{
+    background-color: darkslategrey;
+}
+.nav{
+ max-width: 100%;   
+ margin: auto;
+ height: 70px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ padding-inline: 16px;
+}
+.home{
+    font-size: 48px;
+}
+.nav-list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 50px;
+}
+.nav-lista a{
+    padding: 16px;
+    font-size: 16px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+ button{
+    cursor: pointer;
+ }
+.container{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width : 60%;
+    max-height: 350px;
+    background: linear-gradient(darkslategrey, rgb(79, 134, 134) );
+    border: 2px solid rgb(93, 90, 90); 
+    margin-top: 100px;
+    margin: 19%;
+    box-shadow: 0 0 2px 2px;
+}
+.questions-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.questions{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.answers-containers{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+ .next-question{
+    margin-top: 32px;
+ }
+ .button{
+    background-color: darkslategrey;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 32px;
+    transition: 0.2s;
+ }
+.button:hover{
+    filter: brightness(0.8);
+}
+.hide{
+    display: none;
+}
+.answer:disabled{
+    cursor: not-allowed;
+}
+.correct{
+    background-color: rgb(44, 119, 56);
+}
+.incorrect{
+    background-color: rgb(96, 2, 2);
+}
+button:not(:disabled):hover{
+    filter: brightness(0.8);
+}
+
+.final-message{
+    font-size: 20px;
+    text-align: center;
+}
+.final-message span{
+    display: block;
+    margin-top: 8px;
+}

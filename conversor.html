@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/conversor.css">
+    <script src="js/conversor.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="../Home/home.html" class="home">Home</a>
+            <ul class="nav-list">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="center">
+        <h2>Conversor</h2>
+        <div class="area">
+            <input type="number" id="libra-esterlina" name="libra-esterlina" placeholder="Libra esterlina para real :D">
+        </div>
+        <div class="area">
+            <input type="number" id="meters" name="meters" placeholder="Metros para jardas :D">
+        </div>
+        <div class="area">
+            <input type="number" id="kelvin" name="kelvin" placeholder="Fahrenheint para kelvin :D">
+        </div>
+        <div>
+            <button onclick="Conversao()">Converter!</button>
+        </div>
+        <div class="convertido">
+            <h4>Libras para real:<p id="libra"></p></h4>
+            <h4>Metros para jardas: <p id="metros"></p></h4>
+            <h4>Fahrenheint para kelvin: <p id="temperatura"></p></h4>
+        </div>
+    </div>
+</body>
+</html>

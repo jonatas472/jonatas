@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/contato.css">
+    <script src="js/contato.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="home">Home</a>
+            <ul class="nav-list">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <form id="form">
+        <div class="central">
+            <div>
+            <span class="span-required">Digite seu nome: </span><br>
+            <input type="text" name="nome" id="nome" class="input required" oninput="nameValidate()"><br>
+            <span class="span-none">O nome deverá ter no minimo três caracteres!</span>
+            <br>
+        </div>
+            <br>
+            <div>
+            <span class="span-required">Digite seu email: </span><br>
+            <input type="email" name="email" id="email" class="input required" oninput="emailValidate()"><br>
+            <span class="span-none">O email digitado é invalido!</span>
+            <br>
+        </div>
+            <br>
+            <div>
+            <span class="span-required">Digite seu número de Whatsapp: </span><br>
+            <input type="tel" name="telefone" id="telefone" class="input required" oninput="phoneValidate()"><br>
+            <span class="span-none">Número de Whatsapp invalido!</span>
+            <br>
+        </div>
+        <div>
+            <br>
+            <span class="span-required" >Mande uma mensagem para mim!</span><br>
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <div>
+            <button type="submit">Envie aqui</button> 
+        </div>  
+</body>
+</html>

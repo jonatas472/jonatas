@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/imc.css">
+    <script src="js/imc.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="home">Home</a>
+            <ul class="nav-list">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="centro">
+        <h2>IMC</h2>
+    <div>
+        <input type="number" name="metros" id="metros" class="metros" placeholder="Digite sua altura em metros" class="inputs">
+    </div>
+    <div>
+    <input type="number" name="kilo" id="kilo" class="kilo" placeholder="Digite seu peso em kilogramas" class="inputs">
+</div> 
+<div>
+    <button onclick="indiceCorporal()">Clique para realizar os cálculos</button>
+</div>
+<div class="massa">
+<h4>Seu IMC é: <p id="corporeo"></p></h4>
+<h4>Você está com: <p id="resultado"></p></h4>
+</div>
+</body>
+</html>

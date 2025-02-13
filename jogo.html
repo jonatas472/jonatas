@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/jogo.css">
+    <script src="js/jogo.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="home">Home</a>
+            <ul class="nav-list">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <div class="center">
+        <h2>Jogo da Adivinhação!</h2>
+        <h3>Adivinhe o número de 1 a 100!</h3>
+        <input type="number" class="ad" id="ad" name="ad">
+        <button onclick="advinheNumber()">Lance sua aposta!</button>
+        <div class="tentativas">
+            <h4 id="attemptss">
+            </h4>
+        </div>
+    </div>
+</body>
+</html>

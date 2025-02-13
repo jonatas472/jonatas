@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: Andale Mono, monospace;
+    color: azure;
+}
+body{
+    background-color: rgb(34, 69, 69);
+}
+.header{
+    background-color: darkslategrey;
+}
+.nav{
+ max-width: 100%;   
+ margin: auto;
+ height: 70px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ padding-inline: 16px;
+}
+.home{
+    font-size: 48px;
+}
+.nav-list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 50px;
+}
+.nav-lista a{
+    padding: 16px;
+    font-size: 16px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.central{
+    background: linear-gradient(darkslategrey, rgb(79, 134, 134) );
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 420px;
+    height: 425px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+input, textarea{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus{
+    border-color: #8a2be2;
+    outline: none;
+    box-shadow: 0 0 5px #8a2be2;
+}
+
+button{
+    background: linear-gradient(darkslategrey, rgb(79, 134, 134) );
+    color:blanchedalmond;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor:pointer;
+    transition: background 0.3s ease;
+}
+button:hover{
+    background: linear-gradient(darkslategrey, rgb(79, 134, 134) );
+}
+
+.span-none{
+    display:none;
+    font-size: 10px;
+}
